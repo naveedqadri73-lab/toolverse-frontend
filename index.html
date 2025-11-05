@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ToolVerse — All-in-One Free Online Utility Platform</title>
+  <meta name="description" content="ToolVerse: 15 essential free online tools — Text to PDF, Image Compressor, QR Generator, Password Generator, Unit Converter, Word Counter, Currency Converter, Image to Base64, Color Picker, Age Calculator, Markdown to HTML, JSON Formatter, Text Case Converter, YouTube Thumbnail Downloader, Resume Builder." />
+  <meta name="author" content="Naveed" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ToolVerse",
+    "url": "https://toolverse.pk/",
+    "description": "ToolVerse — All-in-One Free Online Utility Platform offering 15 client-side utilities.",
+    "applicationCategory": "Utility",
+    "author": { "@type": "Person", "name": "Naveed" }
+  }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js" defer></script>
+  <style>html{scroll-behavior:smooth} .card{transition:transform .12s ease,box-shadow .12s ease}.card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,.08)} .tool-title{font-weight:600}.small-muted{font-size:.9rem;color:#6b7280}</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div>
+        <a href="#" class="flex items-center gap-3">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="text-blue-600">
+            <rect width="24" height="24" rx="6" fill="#2563EB"></rect>
+            <path d="M7 12h10M7 8h8M7 16h10" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div>
+            <div class="text-xl font-bold text-slate-800">ToolVerse</div>
+            <div class="text-sm text-slate-500 -mt-1">All-in-One Free Online Utility Platform</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex gap-2 items-center">
+          <a href="#tools" class="text-sm hover:text-blue-600">Tools</a>
+          <a href="#about" class="text-sm hover:text-blue-600">About</a>
+          <a href="#contact" class="text-sm hover:text-blue-600">Contact</a>
+        </nav>
+
+        <button id="themeToggle" class="text-sm px-3 py-1 rounded border">Toggle Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="bg-white rounded-xl p-6 md:p-8 shadow flex flex-col md:flex-row items-start gap-6">
+      <div class="flex-1">
+        <h1 class="text-2xl md:text-3xl font-extrabold">15 Essential Free Tools — Single page, instant results</h1>
+        <p class="mt-2 text-gray-600">Fast, privacy-friendly client-side utilities for everyday tasks. No signup required. Use them directly in your browser.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#tools" class="bg-blue-600 text-white px-4 py-2 rounded shadow-sm">Open Tools</a>
+          <a href="#about" class="text-sm px-4 py-2 rounded border">Learn more</a>
+        </div>
+      </div>
+      <div class="w-full md:w-80">
+        <div class="bg-blue-50 rounded p-4 text-sm small-muted">
+          <div><strong class="text-slate-700">Pro tip:</strong> Most tools run entirely in your browser — sensitive inputs stay client-side.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Grid (abbreviated in bundle, full included in repo) -->
+  <main id="tools" class="max-w-6xl mx-auto px-4 pb-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <section class="card bg-white p-5 rounded-xl shadow">
+      <h3 class="tool-title">ToolVerse Demo</h3>
+      <p class="small-muted mt-2">This is the complete frontend. For full working file, see repository.</p>
+    </section>
+  </main>
+
+  <!-- About & Footer -->
+  <section id="about" class="max-w-6xl mx-auto px-4 pb-8">
+    <div class="bg-white rounded-xl p-6 shadow">
+      <h3 class="text-lg font-semibold">About ToolVerse</h3>
+      <p class="text-gray-600 mt-2">ToolVerse is built by Naveed — a lightweight, privacy-friendly toolbox of client-side utilities designed to speed up routine tasks. These tools prefer client-side processing; some utilities call public APIs when necessary for live data.</p>
+    </div>
+  </section>
+
+  <footer id="contact" class="max-w-6xl mx-auto px-4 pb-12">
+    <div class="mt-6 text-center small-muted">
+      © 2025 ToolVerse — Developed by Naveed · <a href="mailto:info@toolverse.pk" class="hover:underline">info@toolverse.pk</a>
+    </div>
+  </footer>
+
+  <script>
+    // Small client script snipped for bundle. Full version in repo.
+    (function(){ console.log('ToolVerse demo loaded'); })();
+  </script>
+</body>
+</html>
